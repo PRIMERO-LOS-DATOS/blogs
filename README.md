@@ -1,1 +1,1 @@
-# MIS-BLOGS
+# BLOGS
