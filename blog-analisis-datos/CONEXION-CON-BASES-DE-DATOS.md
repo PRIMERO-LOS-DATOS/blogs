@@ -9,7 +9,7 @@ Elementos para conexión con una base de datos:
 ## MySQL
 
 <div align="center">
-<img src="https://drive.google.com/uc?id=13A19VstxtSpyHrs8m2aXoyVEJvfMtwA_" width="50%" height="100px"/>
+<img src="https://drive.google.com/uc?id=13A19VstxtSpyHrs8m2aXoyVEJvfMtwA_" width="40%" height="30vh"/>
 </div>
 
 ```r
@@ -24,7 +24,7 @@ con <- dbConnect(RMySQL::MySQL(),
 ## MariaDB
 
 <div align="center">
-<img src="https://drive.google.com/uc?id=1844-huLzhqMkSwoMWuTdx-J0U3FC52y4" width="50%" height="100px"/>
+<img src="https://drive.google.com/uc?id=1844-huLzhqMkSwoMWuTdx-J0U3FC52y4" width="40%" height="30vh"/>
 </div>
 
 ```r
@@ -40,7 +40,7 @@ con <- dbConnect(RMariaDB::MariaDB(),
 ## PostgreSQL
 
 <div align="center">
-<img src="https://drive.google.com/uc?id=1eTPJFvcQzL52qp_e7yEE4TUH-BPFUEH4" width="50%" height="100px"/>
+<img src="https://drive.google.com/uc?id=1eTPJFvcQzL52qp_e7yEE4TUH-BPFUEH4" width="40%" height="30vh"/>
 </div>
 
 ```r
@@ -55,7 +55,7 @@ con <- dbConnect(RPostgres::Postgres(),
 ## MongoDB
 
 <div align="center">
-<img src="https://drive.google.com/uc?id=1f7JEnG9NTYLQJj02ttFMr549taRCg17b" width="50%" height="100px"/>
+<img src="https://drive.google.com/uc?id=1f7JEnG9NTYLQJj02ttFMr549taRCg17b" width="40%" height="30vh"/>
 </div>
 
 ```r
