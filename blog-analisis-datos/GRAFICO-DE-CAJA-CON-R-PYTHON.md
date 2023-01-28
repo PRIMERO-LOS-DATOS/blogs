@@ -1,5 +1,4 @@
 Los grafico de caja son utilizados para resumir de forma visual un conjunto de datos, los máximos, mínimos, mediana y cuartiles.
-El código presentado en este articulo puede ejecutarlo en un entorno de trabajo de Rmarkdown.
 
 ## Librerías R necesarias
 
