@@ -32,8 +32,6 @@ wordcloud(words = palabras,
 
 ```
 
-<div class="separator" style="clear: both; text-align: center;">
-  <a href="https://drive.google.com/uc?id=1seBm35WQ0qjEJj97esQhuQ0pt1M-3KJX" imageanchor="1" style="margin-left: 1em; margin-right: 1em;">
-    <img border="0" data-original-height="198" data-original-width="557" height="251" src="https://drive.google.com/uc?id=1seBm35WQ0qjEJj97esQhuQ0pt1M-3KJX" width="636" />
-  </a>
+<div align="center">
+<img src="https://drive.google.com/uc?id=1seBm35WQ0qjEJj97esQhuQ0pt1M-3KJX"/>
 </div>
