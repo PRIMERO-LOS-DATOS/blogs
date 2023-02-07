@@ -1,0 +1,5 @@
+## Tipos Claves De Regresiones: ¿Cuál Usar?
+https://www.datasource.ai/es/data-science-articles/tipos-claves-de-regresiones-cual-usar
+
+## 6 Types of Regression Models in Machine Learning You Should Know About
+https://www.upgrad.com/blog/types-of-regression-models-in-machine-learning/

@@ -1,8 +1,6 @@
 ---
-title: "Untitled"
-output:
-  md_document:
-    variant: markdown_github
+title: "QUE SON LAS REGRESIONES"
+output: md_document
 date: "2023-02-06"
 ---
 
@@ -10,7 +8,11 @@ date: "2023-02-06"
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-La real academia española define una regresión como: "retrocesión o acción de volver hacia atrás", donde retrocesión se entiene como la ación y efecto de retroceder.
+En esencia o en términos simples una regresión es solo un promedio, pero promedio mas complejo satisface condiciones.
+
+La real academia española define una regresión como: "retrocesión o acción de volver hacia atrás", donde retrocesión se entiende como la acción y efecto de retroceder.
+
+Con esto podemos concluir que la regresión hace uso datos pasados.
 
 
 
@@ -21,5 +23,12 @@ La real academia española define una regresión como: "retrocesión o acción d
 
 ## Tipos de regresión 
 
-- Regresión lineal.
-- Regresión logistica.
+
+- Regresión Lineal.
+- Regresión Logística.
+- Regresión Ridge.
+- Regresión Lasso.
+- Regresión Polynomial.
+- Regresión Bayesiana.
+
+
