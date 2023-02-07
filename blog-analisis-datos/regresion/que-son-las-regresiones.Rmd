@@ -18,7 +18,16 @@ Con esto podemos concluir que la regresión hace uso datos pasados.
 $$ \sum_{i=1}^{n}{xw} $$
 
 
+```{r}
+library(ggplot2)
+```
 
+
+gráfico
+
+```{r, fig.align='center'}
+hist(cars$speed)
+```
 
 
 
