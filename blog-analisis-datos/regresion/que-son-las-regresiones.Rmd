@@ -18,6 +18,9 @@ Pero si nos vamos al lado histórico este termino "regresión" fue acuñada por 
 Con esto podemos concluir que la regresión hace uso datos pasados.
 
 
+<div align="center">
+<img src="https://drive.google.com/uc?id=1f7JEnG9NTYLQJj02ttFMr549taRCg17b" width="40%" height="30vh"/>
+</div>
 
 
 
