@@ -1,7 +1,5 @@
 ---
-title: "QUE SON LAS REGRESIONES"
-output: md_document
-date: "2023-02-06"
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -12,7 +10,15 @@ En esencia o en términos simples una regresión es solo un promedio, pero prome
 
 La real academia española define una regresión como: "retrocesión o acción de volver hacia atrás", donde retrocesión se entiende como la acción y efecto de retroceder.
 
+Pero si nos vamos al lado histórico este termino "regresión" fue acuñada por Francis Galton  y la ley de regresión universal que afirma que, a pesar de la tendencia de los padres de estatura alta a procrear hijos altos y los padres de estatura baja, hijos bajos, la estatura promedio de los niños de padres de una estatura determinada tendía a desplazarse, o “regresar”, a la estatura promedio de la población total.
+
+
 Con esto podemos concluir que la regresión hace uso datos pasados.
+
+$$ \sum_{i=1}^{n}{xw} $$
+
+
+
 
 
 

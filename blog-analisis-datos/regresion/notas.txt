@@ -1,5 +1,25 @@
+# BOOK
+- Econometria - Gujarati
+
+# WEBS
+
 ## Tipos Claves De Regresiones: ¿Cuál Usar?
 https://www.datasource.ai/es/data-science-articles/tipos-claves-de-regresiones-cual-usar
 
 ## 6 Types of Regression Models in Machine Learning You Should Know About
 https://www.upgrad.com/blog/types-of-regression-models-in-machine-learning/
+
+## The term regression was originally
+https://homework.study.com/explanation/the-term-regression-was-originally-used-in-1885-by-sir-francis-galton-in-his-analysis-of-the-relationship-between-the-heights-of-children-and-parents-he-formulated-the-law-of-universal-regression.html
+
+## On Galton’s Change From “Reversion” to “Regression”
+http://www.columbia.edu/~pg2113/index_files/Gorroochurn-On%20Galton's%20Change.pdf
+
+## Galton papers
+https://galton.org/bibnew/papers.html
+
+
+
+
+
+

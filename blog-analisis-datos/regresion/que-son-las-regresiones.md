@@ -1,30 +1,26 @@
-## R Markdown
+En esencia o en términos simples una regresión es solo un promedio, pero
+promedio mas complejo satisface condiciones.
 
-This is an R Markdown document. Markdown is a simple formatting syntax
-for authoring HTML, PDF, and MS Word documents. For more details on
-using R Markdown see <http://rmarkdown.rstudio.com>.
+La real academia española define una regresión como: “retrocesión o
+acción de volver hacia atrás”, donde retrocesión se entiende como la
+acción y efecto de retroceder.
 
-When you click the **Knit** button a document will be generated that
-includes both content as well as the output of any embedded R code
-chunks within the document. You can embed an R code chunk like this:
+Pero si nos vamos al lado histórico este termino “regresión” fue acuñada
+por Francis Galton y la ley de regresión universal que afirma que, a
+pesar de la tendencia de los padres de estatura alta a procrear hijos
+altos y los padres de estatura baja, hijos bajos, la estatura promedio
+de los niños de padres de una estatura determinada tendía a desplazarse,
+o “regresar”, a la estatura promedio de la población total.
 
-``` r
-summary(cars)
-```
+Con esto podemos concluir que la regresión hace uso datos pasados.
 
-    ##      speed           dist       
-    ##  Min.   : 4.0   Min.   :  2.00  
-    ##  1st Qu.:12.0   1st Qu.: 26.00  
-    ##  Median :15.0   Median : 36.00  
-    ##  Mean   :15.4   Mean   : 42.98  
-    ##  3rd Qu.:19.0   3rd Qu.: 56.00  
-    ##  Max.   :25.0   Max.   :120.00
+$$ \sum^{n}\_{i=1}{xw} $$
 
-## Including Plots
+## Tipos de regresión
 
-You can also embed plots, for example:
-
-![](https://raw.githubusercontent.com/PRIMERO-LOS-DATOS/blogs-primero-los-datos/main/blog-analisis-datos/regresion/que-son-las-regresiones_files/figure-markdown_github/pressure-1.png)
-
-Note that the `echo = FALSE` parameter was added to the code chunk to
-prevent printing of the R code that generated the plot.
+-   Regresión Lineal.
+-   Regresión Logística.
+-   Regresión Ridge.
+-   Regresión Lasso.
+-   Regresión Polynomial.
+-   Regresión Bayesiana.
