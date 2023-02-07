@@ -1,5 +1,7 @@
 ---
-output: html_document
+output: 
+  html_document:
+    css: mystyle.css
 ---
 
 ```{r setup, include=FALSE}
@@ -15,19 +17,9 @@ Pero si nos vamos al lado histórico este termino "regresión" fue acuñada por 
 
 Con esto podemos concluir que la regresión hace uso datos pasados.
 
-$$ \sum_{i=1}^{n}{xw} $$
 
 
-```{r}
-library(ggplot2)
-```
 
-
-gráfico
-
-```{r, fig.align='center'}
-hist(cars$speed)
-```
 
 
 
