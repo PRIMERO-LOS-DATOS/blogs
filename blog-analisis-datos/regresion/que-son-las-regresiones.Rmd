@@ -1,7 +1,5 @@
 ---
-output: 
-  html_document:
-    css: mystyle.css
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
