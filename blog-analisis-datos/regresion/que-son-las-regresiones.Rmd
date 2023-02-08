@@ -2,8 +2,18 @@
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
 ```
 
 En esencia o en términos simples una regresión es solo un promedio, pero promedio mas complejo satisface condiciones.
@@ -12,33 +22,7 @@ La real academia española define una regresión como: "retrocesión o acción d
 
 Pero si nos vamos al lado histórico este termino "regresión" fue acuñada por Francis Galton  y la ley de regresión universal que afirma que, a pesar de la tendencia de los padres de estatura alta a procrear hijos altos y los padres de estatura baja, hijos bajos, la estatura promedio de los niños de padres de una estatura determinada tendía a desplazarse, o “regresar”, a la estatura promedio de la población total.
 
-
 Con esto podemos concluir que la regresión hace uso datos pasados.
-
-
-<div align="center">
-<img src="https://drive.google.com/uc?id=1f7JEnG9NTYLQJj02ttFMr549taRCg17b" width="40%" height="30vh"/>
-</div>
-
-codigo
-
-```{r}
-library(ggplot2)
-
-```
-
-
-
-grafico
-```{r}
-hist(cars$speed)
-```
-
-
-
-
-
-
 
 
 
@@ -53,4 +37,4 @@ hist(cars$speed)
 - Regresión Polynomial.
 - Regresión Bayesiana.
 
-
+</div>
