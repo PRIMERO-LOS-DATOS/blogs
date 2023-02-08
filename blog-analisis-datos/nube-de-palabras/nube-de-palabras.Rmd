@@ -2,6 +2,8 @@
 output: html_document
 ---
 
+<div class="my-post-main-container">
+
 <!-- ################  CONFIGURACIONES ###################### -->
 
 ```{r include=FALSE}
@@ -49,3 +51,5 @@ wordcloud(words = palabras,
           fixed.asp = TRUE)
 
 ```
+
+</div>
