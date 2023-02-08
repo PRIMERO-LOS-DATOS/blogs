@@ -43,7 +43,7 @@ cars %>% ggplot(aes(x=dist)) +
 
 ## Histograma en Python
 
-```{python}
+```{python, results='hide'}
 plt.clf()
 x=np.array(r.cars["dist"])
 plt.hist(x)
