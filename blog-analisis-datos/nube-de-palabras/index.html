@@ -17,7 +17,8 @@
           let parser = new DOMParser();
           let doc = parser.parseFromString(html, "text/html");
           let divContainer = doc.querySelector(".my-post-main-container");
-          document.querySelector("#mypost").innerHTML = divContainer.innerHTML;
+          console.log(divContainer);
+          //document.querySelector("#mypost").innerHTML = divContainer.innerHTML;
         })
         .catch(function (err) {
           console.warn("Something went wrong.", err);
