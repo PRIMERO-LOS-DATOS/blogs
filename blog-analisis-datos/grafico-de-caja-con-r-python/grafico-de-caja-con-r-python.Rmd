@@ -1,0 +1,57 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+Los grafico de caja son utilizados para resumir de forma visual un conjunto de datos, los máximos, mínimos, mediana y cuartiles.
+
+## Librerías R necesarias
+
+```{r}
+library(gcookbook)
+library(reticulate)
+library(ggplot2)
+library(dplyr)
+```
+
+## Librerías Python necesarias
+
+```{python}
+import numpy as np
+import matplotlib.pyplot as plt
+```
+
+## Grafico de caja en R
+
+```{r}
+cars %>% ggplot(aes(y=dist)) +
+    geom_boxplot()
+```
+
+
+
+## Grafico de caja en Python
+
+```{python, results='hide'}
+plt.clf()
+x=np.array(r.cars["dist"])
+plt.boxplot(x)
+plt.show()
+```
+
+
+
+</div>

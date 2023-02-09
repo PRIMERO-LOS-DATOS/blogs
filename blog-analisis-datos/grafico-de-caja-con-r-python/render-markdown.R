@@ -1,3 +1,3 @@
 ruta <- paste0(getwd(),
-               '/blog-analisis-datos/conexion-con-bases-de-datos-con-r/conexion-con-bases-de-datos-con-r.Rmd')
+               '/blog-analisis-datos/grafico-de-caja-con-r-python/grafico-de-caja-con-r-python.Rmd')
 rmarkdown::render(ruta)
