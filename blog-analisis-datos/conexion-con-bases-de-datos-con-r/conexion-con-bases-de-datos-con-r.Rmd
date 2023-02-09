@@ -130,6 +130,10 @@ dbSendQuery(con, "SELECT * FROM mtcars WHERE cyl = 4") # Hacer uso de setencia S
 
 #### MongoDB
 
+```{r, echo=FALSE, out.width='30%', out.height='20%'}
+knitr::include_graphics("images/mongodb-logo.png")
+```
+
 El patrón para conectarnos con bases de datos de MongoDB contiene los siguientes elementos:
 
 - El nombre de la colección.
@@ -143,9 +147,6 @@ install.packages('mongolite')
 library(mongolite) # Para activar la libreria
 ```
 
-```{r, echo=FALSE, out.width='30%', out.height='20%'}
-knitr::include_graphics("images/mongodb-logo.png")
-```
 
 ````{r, eval=FALSE}
 queryList = mongo(collection='collection',
