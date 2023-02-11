@@ -1,0 +1,38 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+Dentro el campo de las finanzas cuando uno se afrenta a la decisión de inversión se hace presente la siguiente pregunta:
+
+- **¿Cual es el rendimiento mínimo debe ofrecer una inversión para no tener perdidas?**
+
+Existe diferentes maneras de responder esta pregunta y una de esta es la tasa interna de retorno (TIR).
+
+La tasa interna de retorno (TIR) responde a la siguiente pregunta:
+
+**¿Cual es el rendimiento mínimo debe ofrecer una inversión para no tener perdidas?**
+
+Existe diferentes maneras de responder esta pregunta y una de esta es la tasa interna de retorno (TIR).
+
+La tasa interna de retorno es un concepto asociado a las finanzas por su vinculo con el valor actual neto.
+
+
+$$ VAN = \sum_{i=0}^{n}{ \frac{F_{t}} {(1+TIR)^{t}} -I = 0  }  $$
+
+
+</div>
+
