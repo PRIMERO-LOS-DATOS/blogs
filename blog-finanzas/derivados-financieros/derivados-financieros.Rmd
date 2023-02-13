@@ -16,6 +16,13 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```
 
+Un derivado financiero o instrumento derivado es un producto financiero cuyo valor se basa en el precio de otro activo.
+
+
+- Seguros.
+- Futuros.
+- Opciones.
+- Swaps.
 
 
 
