@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```
 
+El modelo de Black-Scholes o ecuación de Black-Scholes es una ecuación usada en matemática financiera para determinar el precio de determinados activos financieros. 
 
+Esta ecuación, basada ampliamente en la teoría de procesos estocásticos, modela variaciones de precios como un proceso de Wiener.
 
 
 </div>
