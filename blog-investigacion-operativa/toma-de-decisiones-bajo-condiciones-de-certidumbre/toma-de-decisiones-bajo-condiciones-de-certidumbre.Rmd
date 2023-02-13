@@ -1,0 +1,22 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+La toma de decisiones bajo condiciones de certidumbre o certeza, sólo es posible cuando dispones de toda la información necesaria, conoces todos los datos y variables
+
+
+</div>

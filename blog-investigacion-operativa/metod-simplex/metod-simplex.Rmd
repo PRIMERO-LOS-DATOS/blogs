@@ -1,0 +1,22 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+En optimización matemática, el término algoritmo símplex habitualmente se refiere a un conjunto de métodos muy usados para resolver problemas de programación lineal.
+
+
+</div>
