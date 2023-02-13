@@ -1,0 +1,29 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+La RAE (Real Academia Española) define la **valoración** como la acción y efector de valorar, en consecuencia valorar se entiende como señalar el precio de algo o reconocer, estimar o apreciar el valor o mérito de alguien o algo.
+
+En finanzas la valoración es proceso que da como resultado la asignación de valor de activos financieros.
+
+## Metodos de valoración
+
+- Valoración por flujos descontados.
+- Valoración por múltiplos.
+
+
+</div>
