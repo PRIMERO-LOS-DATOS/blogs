@@ -16,7 +16,9 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```
 
+El Valor Económico Agregado (EVA) se define como el importe que queda una vez cubiertos todos los gastos y satisfecha la rentabilidad mínima esperada por parte de las empresas. 
 
+La principal innovación del EVA es que incorpora el costo de capital en el cálculo del resultado del negocio, y su principal finalidad es inducir el comportamiento de los dirigentes, orientándolos a actuar como si fuesen los dueños del negocio.
 
 
 </div>
