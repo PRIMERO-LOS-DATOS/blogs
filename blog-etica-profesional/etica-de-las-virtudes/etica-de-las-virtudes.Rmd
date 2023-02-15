@@ -1,0 +1,36 @@
+---
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+Ética de las virtudes desarrollada por Aristoteles donde la ética se basa en tres fundamentos:
+
+- Volición (Algo que nosotros deseamos).
+- Deliberación (Como hacerlo).
+- Decisión (Conducta a utilizar).
+
+## Definición de virtud
+
+La virtud se entiende como la excelencia como acción, es lo mas apegado a la naturaleza de cada ser, es la esencia del alma.
+
+## Definición de bien 
+
+Reconocemos el bien por el grado de felicidad que nos proporciona.
+
+- Bien (Todo aquello que nos hace feliz).
+- Mal (Todo lo que nos causa dolor).
+
+Toda persona por naturaleza busca el bien y evita el mal.
+
+## Tipos de bien
+
+- Bien común
+- Bien individual
+
+
+
+
