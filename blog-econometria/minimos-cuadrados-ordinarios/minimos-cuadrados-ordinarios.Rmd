@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```
 
-En optimización matemática, el término algoritmo símplex habitualmente se refiere a un conjunto de métodos muy usados para resolver problemas de programación lineal.
+
 
 
 </div>

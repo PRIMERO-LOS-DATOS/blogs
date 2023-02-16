@@ -1,0 +1,38 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+La Programación Lineal es una herramienta para resolver problemas de optimización, George Dantzig creó un método eficaz, que es el algoritmo simplex. A partir del surgimiento de este algoritmo se ha usado la programación lineal para los problemas de optimización en industrias tan diversas como la banca, la educación, la silvicultura, el petróleo y el transporte.
+
+- Definición de variables y parámetros
+- Función Objetivo.
+- Restricciones.
+- Condición de no negatividad.
+
+## DEFINICION DE VARIABLES Y PARAMETROS
+
+- $Z =$ Se refiere al objetivo de la empresa que puede ser Maximizar o Minimizar.
+- $X_{j} =$ Es la Variable de decisión j-ésima o nivel de actividad j, y está referido a las cantidades a producir o vender de un determinado bien o servicio de una empresa.
+- $C_{j} =$ Coeficiente costo o ganancia para la j-ésima actividad (j = 1,2,.....n), son los costos, ganancias o utilidades que genera cada una de las variables de decisión.
+- $a_{ij} =$ Coeficiente tecnológico o cantidad de recurso i-ésimo asignado a la actividad j-ésima (i = 1,2.....m), son las cantidades de los recursos tecnológicos, humanos, de información asignado a cada variable de decisión.
+- $b_{i} =$ i-ésimo recurso limitado, son los recursos limitados o lados derechos de las restricciones que posee cada empresa.
+- $n =$ numero de variables de decisión.
+- $m =$ numero de restricciones.
+
+
+
+</div>

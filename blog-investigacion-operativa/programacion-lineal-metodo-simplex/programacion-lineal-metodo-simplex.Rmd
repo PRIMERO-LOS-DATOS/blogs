@@ -1,0 +1,42 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+En optimización matemática, el término algoritmo símplex habitualmente se refiere a un conjunto de métodos muy usados para resolver problemas de programación lineal.
+
+Es un algoritmo que aplica un procedimiento iterativo de solución. En la mayoría de los problemas de programación lineal se tienen muchas variables en lo que es imposible usar el método grafico; por esta razón se necesita un método para resolver problemas con varias variables, tal es el caso del método simplex que resuelve problemas con estas características.
+
+Solo aplica a problemas cuyas restricciones o limitación solo contengas restricciones del tipo $\leq$, es decir solo trabaja con holguras.
+
+Los pasos que sigue este algoritmo son:
+
+Paso 1.- Se debe llevar al problema en su forma estándar.
+
+Paso 2.- Llevar la función objetivo a la forma Z - CX = 0
+
+Paso 3.- Llevar a la tabla inicial del simplex
+
+Paso 4.- Verificar si todos los coeficientes de la función objetivo son positivos o cero. Estos coeficientes son llamados Zj - Cj entendiéndose a Zj como el incremento neto que se opera en el coeficiente Cj a través de las iteraciones del método simplex. Por lo tanto la búsqueda del optimo se detiene cuando Zj - Cj  0 para problemas de maximización y Zj - Cj  0 para problemas de minimización. Si se cumple que Zj - Cj  0 para el caso de maximización, entonces se habrá llegado al óptimo de lo contrario se continua con el paso 5.
+
+Paso 5.- Como no se llegó al optimo en el paso anterior, una de las variables no básicas tendrá que ENTRAR a la base y una de las variables básicas tendrá que SALIR de la base. Entonces debemos aplicar las reglas de entrada y de salida.
+
+Paso 6.- Se debe proceder al paso iterativo haciendo aparecer la unidad en la posición del pivote y ceros en la columna pivote y toda la fila del pivote se debe dividir entre el pivote elegido, este proceso se logra con la utilización del método de Gauss Jordán. Una vez realizado este proceso debemos verificar que la tabla nueva obtenida cumpla con las condiciones del simplex.
+
+Paso 7.- Volver al paso 5 en caso de no tener una solución óptima.
+
+
+</div>
