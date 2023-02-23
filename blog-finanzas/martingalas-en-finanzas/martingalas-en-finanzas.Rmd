@@ -1,0 +1,36 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+En teoría de probabilidad, un proceso estocástico de tipo martingala (galicismo de martingale) es una secuencia de variables aleatorias en la que, en un tiempo dado, la esperanza condicional del siguiente valor de la secuencia, dado todos los valores anteriores, es igual al valor presente.
+
+
+El concepto fue inmediatamente aplicado al análisis de procesos bursátiles. Uno de los resultados más importantes de la matemática financiera es, precisamente, **que un mercado perfecto sin posibilidades de arbitraje es una martingala**.
+
+Si:
+
+$$ E( S_{t+h} - S_{h} | S_{h}) = 0 $$
+
+Se tiene:
+
+$$ E( S_{t+h} | S_{h}) = S_{h} $$
+
+Es decir que el mejor pronostico de $S_{t+h}$, donde su valor actual es $S_{h}$, es justamente $S_{h}$.
+
+Los procesos estocásticos que satisfacen esta condición son llamados martingala, es decir, no existe posibilidades de arbitraje.
+
+</div>
