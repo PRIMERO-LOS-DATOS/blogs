@@ -16,7 +16,7 @@ knitr::opts_chunk$set(echo = TRUE,
 
 ```
 
-La idea fundamental del método de limites es simple: para determinar el valor exacto de cierta magnitud, primero se construye una serie de aproximaciones a ella, cada una mas exacta que la anterior; y luego del examen de estas cantidades, es decir, del proceso de aproximación, determinamos el valor de la magnitud.
+
 
 
 </div>
