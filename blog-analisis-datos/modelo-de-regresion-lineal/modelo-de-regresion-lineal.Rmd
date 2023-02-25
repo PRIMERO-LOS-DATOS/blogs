@@ -1,0 +1,52 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+# LIBRERÍAS NECESARIAS
+
+library(ggplot2)
+library(dplyr)
+library(patchwork)
+
+```
+
+La idea fundamental detrás de un modelo de regresión lineal es encontrar una curva "linea" que represente de la mejor manera posible a un conjunto de datos.
+
+Por ejemplo partimos del siguiente conjunto de datos que representa la relación entre la velocidad y distancia recorrida de vehículos.
+
+```{r}
+autos_dist <- 
+cars %>% ggplot(aes(x=dist, y=speed)) + 
+  geom_point() + 
+  ggtitle('GRAFICO DE DISPERCION') +
+  xlab('Distancia') + 
+  ylab('Velocidad')
+
+autos_dist
+
+```
+
+Que linea representa mas este conjunto de datos:
+
+```{r}
+
+(autos_dist + geom_hline(yintercept = mean(cars$speed))) + ( 
+  autos_dist + geom_vline(xintercept = mean(cars$dist)))
+```
+
+A primera vista no podemos decir cual es mejor, entonces primero demos encontrar una función denominada como **"función de coste"** que nos diga que linea es mejor que otra.
+
+
+</div>

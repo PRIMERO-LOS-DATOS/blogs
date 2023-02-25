@@ -24,9 +24,6 @@ Pero si nos vamos al lado histórico este termino "regresión" fue acuñada por 
 
 Con esto podemos concluir que la regresión hace uso datos pasados.
 
-
-
-
 ## Tipos de regresión 
 
 
