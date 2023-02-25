@@ -1,0 +1,61 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+Las medidas de tendencia central, se los debe entender como un método para resumir o caracterizar la información contenida en los datos, es decir, son representantes de los datos. Tambien podemos decir que con las medidas de tendencia central, son funciones donde lo que el analista hace es reducir un vector de tamaño **n** que son los datos, el cual es poco intuitivo que carece de significado, a un vector de tamaño **1**, que el analista puede interpretar, es decir, representar con numeros con un espacio de baja dimensión, números con espacio de dimención muy alta.
+
+$$F:R^{n} \longrightarrow R$$
+
+
+## Media, promedio o media aritmetica
+
+$$\overline{X} = \frac{ \sum_{i=1}^{n} x_{i} }{N}$$
+
+## Moda
+Hace referencia al valor o observación que mas se repite.
+
+## Mediana
+
+Divide la masa de datos en dos partes iguales.
+
+## Promedio Ponderado
+
+Esta media de tendencia central asigna una **peso** a las diferentes observaciones, este peso esta en función de la frecuencia de la observación.
+
+$$\overline{X} = \sum_{i=1}^{n} x_{i}w_{i}$$
+
+## Media armonica
+
+La media armónica es el reciproco de la media aritmética.
+
+$$\overline{X} = \frac{ N }{ \sum_{i=1}^{n} \frac{1}{x_{i}} }$$
+
+## Media geometrica
+
+Esta media se define como la raiz del producto de las observaciones.
+
+
+$$\overline{x} = \sqrt{ \prod_{x=1}^{n} x_{i} }$$
+
+## Media generalizada
+
+Esta media es una abstracción de los diversos tipos de media.
+
+$$\overline{X} = \left( \frac{1}{n} * \sum_{i=1}^{n} x_{i}^{m} \right) ^\frac{1}{m}$$
+
+
+</div>

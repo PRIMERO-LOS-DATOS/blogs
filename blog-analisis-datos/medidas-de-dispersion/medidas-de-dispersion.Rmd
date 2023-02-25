@@ -1,0 +1,36 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+
+## Rango
+$$R = Max_{x} - Min_{x}$$
+
+## Rango intercuartilico
+$$ RQ = Q_{3} - Q_{1} $$
+
+## Varianza
+$$ \sigma^{2} = \frac{ \sum_{i=1}^{N} ( {x_{i} - \overline{X}} ) }{N} $$
+
+## Desviación estandar o tipica
+$$ \sigma = \sqrt{ \frac{ \sum_{i=1}^{N} ( {x_{i} - \overline{X}} ) }{N} }$$
+
+## Coeficiente de variación
+$$ CV = \frac {\sigma_{x}} {\overline{X}} $$
+
+
+</div>

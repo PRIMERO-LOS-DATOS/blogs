@@ -48,5 +48,18 @@ Que linea representa mas este conjunto de datos:
 
 A primera vista no podemos decir cual es mejor, entonces primero demos encontrar una función denominada como **"función de coste"** que nos diga que linea es mejor que otra.
 
+## Funcion de coste o error
+
+Una menera de evaluar la diferentes lineas que se propongan es comprar el error que muestran respecto a las observaciones.
+
+$$ (X_{i}-X) $$
+
+```{r}
+sum(cars$speed - mean(cars$speed))
+```
+
+```{r}
+sum(cars$dist - mean(cars$dist))
+```
 
 </div>
