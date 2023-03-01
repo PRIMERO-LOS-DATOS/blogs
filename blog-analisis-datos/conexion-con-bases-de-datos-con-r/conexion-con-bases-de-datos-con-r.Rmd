@@ -160,4 +160,8 @@ Dada la conexión con la base de datos mongo podrá hacer consultas como si lo h
 query = trips_collection$find('{"usertype":"Subscriber","tripduration":{"$gt":500},"$expr": {"$eq": ["$start station name","$end station name"]}}')
 ```
 
+## Ver tambien
+
+- [Video explicativo del articulo](https://youtu.be/O1i3PJRlhBY)
+
 </div>

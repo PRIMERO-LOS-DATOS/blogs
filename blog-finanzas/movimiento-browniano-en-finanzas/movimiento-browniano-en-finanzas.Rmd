@@ -1,0 +1,28 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+
+El movimiento Browniano busca definir, describir o simular un proceso estocástico.
+
+donde un proceso estocástico sirve para **representar magnitudes aleatorias que varían** en función al tiempo o otra variable independiente.
+
+En la teoría de la probabilidad, un proceso estocástico es un concepto matemático que sirve para representar magnitudes aleatorias que varían con el tiempo o para caracterizar una sucesión de variables aleatorias que evolucionan en función de otra variable, generalmente el tiempo.
+
+
+
+</div>
