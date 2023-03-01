@@ -50,6 +50,8 @@ plt.scatter(x,y)
 plt.show()
 ```
 
+## Ver tambien
 
+- [Vídeo tutorial del articulo](https://youtu.be/nD0aQp1SnuA)
 
 </div>
