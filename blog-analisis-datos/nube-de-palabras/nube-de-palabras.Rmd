@@ -52,4 +52,9 @@ wordcloud(words = palabras,
 
 ```
 
+
+## Ver tambien
+
+- [Video tutorial del articulo](https://youtu.be/zbExa6flNXE)
+
 </div>
