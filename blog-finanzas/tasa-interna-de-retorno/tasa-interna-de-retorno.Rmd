@@ -33,6 +33,30 @@ La tasa interna de retorno es un concepto asociado a las finanzas por su vinculo
 
 $$ VAN = \sum_{i=0}^{n}{ \frac{F_{t}} {(1+TIR)^{t}} -I = 0  }  $$
 
+## Tasa interna de retorno (TIR) con Python
+
+```{python}
+import numpy_financial as npf
+round(npf.irr([-200, 50, 60, -70, 30, 20]), 5)
+```
+
+
+## Tasa interna de retorno (TIR) con R
+
+```{r}
+library(FinCal)
+library(FinancialMath)
+
+irr(cf=c(-200, 50, 60, -70, 30, 20))
+irr2(cf=c(-200, 50, 60, -70, 30, 20))
+
+IRR(cf0=-200,
+    cf=c(50, 60, -70, 30, 20),
+    times=1:5)
+
+
+```
+
 
 </div>
 
