@@ -1,0 +1,29 @@
+---
+output: html_document
+---
+
+<div class="my-post-main-container">
+
+<!-- ################  CONFIGURACIONES ###################### -->
+
+```{r include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message = FALSE,
+                      warning = FALSE,
+                      out.width = "60%",
+                      out.height = "60%",
+                      fig.align = "center")
+
+```
+
+
+La ecuación del ROA se resume en:
+
+$$ ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
+
+Representa la comparación del activo de la institución respecto al resultado obtenido por la dicha entidad, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución.
+
+Donde aquellas instituciones que poseen mayor ROA, se consideran mas favorables sobre las otras.
+
+En primera podemos 
+</div>
