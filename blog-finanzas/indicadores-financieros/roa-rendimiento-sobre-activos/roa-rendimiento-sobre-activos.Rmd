@@ -132,7 +132,7 @@ kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 12)
 ```
 
 
-Donde bajo el criterio de decisión expuesto anteriormente, si bien la empresa "A" posee un mayor activo y resultado neto de gestión contabilizado, se concluye que manteniendo constantes otras variables exógenas la empresa "B" es la alternativa que genera mayores retornos sobre los recursos que administra.
+Entonces bajo el criterio de decisión expuesto anteriormente, si bien la empresa "A" posee un mayor activo y resultado neto de gestión contabilizado, se concluye que manteniendo constantes otras variables exógenas la empresa "B" es la alternativa que genera mayores retornos sobre los recursos que administra.
 
 ## REFERENCIAS
 
