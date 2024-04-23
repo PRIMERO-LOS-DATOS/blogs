@@ -81,7 +81,7 @@ datRender <-
   as_tibble()
 names(datRender) <- c('GESTION', 'ENTIDADES', 'ACTIVO', 'RESULTADO NETO DE GESTION')
 
-kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 10)
+kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 12)
 ```
 
 En primer término, se visualiza la evolución de activos y resultado neto para las entidades correspondientes:
@@ -128,7 +128,7 @@ datRender <-
 
 names(datRender) <- c('ENTIDAD','ACTIVO', 'RESULTADO NETO PROMEDIO', 'ROA PROMEDIO')
 
-kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 10)
+kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 12)
 ```
 
 
