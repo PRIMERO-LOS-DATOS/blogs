@@ -35,12 +35,12 @@ dat <-
 
 ```
 
+<div class="my-post-main-container">
+
 
 **Autor:** Luis Alberto Solis Peña
 
 **Fecha:** `r Sys.Date()`
-
-<div class="my-post-main-container">
 
 ## OBJETO DEL INDICADOR
 
