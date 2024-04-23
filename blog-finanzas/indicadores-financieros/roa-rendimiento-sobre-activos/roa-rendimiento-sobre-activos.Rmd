@@ -15,15 +15,29 @@ knitr::opts_chunk$set(echo = TRUE,
                       fig.align = "center")
 
 ```
+Un indicador financiero tiene por objeto cuantificar una caracteristica o aspecto de la administración de una entidad, estas variables son medidas por los estados financieros.
 
+Representa la comparación del activo de la institución respecto al resultado obtenido por la dicha entidad, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución.
 
 La ecuación del ROA se resume en:
 
 $$ ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
 
-Representa la comparación del activo de la institución respecto al resultado obtenido por la dicha entidad, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución.
+## Criterio de decisión
 
 Donde aquellas instituciones que poseen mayor ROA, se consideran mas favorables sobre las otras.
 
 En primera podemos 
+
+## Practica
+
+Estos datos provienen o son extraidos de los estados financieros:
+
+- Balance general
+- Estado de resultados
+
+
+
+
+
 </div>
