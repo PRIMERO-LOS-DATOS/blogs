@@ -3,13 +3,6 @@ output: html_document
 bibliography: data/referencias.bib
 nocite: '@*'
 ---
-
-**Autor:** xxxxxxxxx
-
-**Fecha:** `r Sys.Date()`
-
-<div class="my-post-main-container">
-
 <!-- ################  CONFIGURACIONES ###################### -->
 
 ```{r include=FALSE}
@@ -22,36 +15,14 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ```
 
-## OBJETO DEL INDICADOR
-
-Un indicador financiero tiene por objeto cuantificar una caracteristica o aspecto de la administración de una entidad, estas variables son medidas por los estados financieros.
-
-## MARCO TEORICO
-
-Representa la comparación del activo de la institución respecto al resultado obtenido por la dicha entidad, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución.
-
-La ecuación del ROA se resume en:
-
-$$ ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
-
-Estos datos provienen o son extraídos de los estados financieros:
-
-- El resultado neto es una cuenta del estado de resultados
-- El total activo es una cuenta del balance general
-
-## CRITERIO DE DECISIÓN
-
-Se considera como escenario o institución mas favorable a un ROA mas elevado, es decir, manteniendo otras variables exogenas constantes se elegirá un proyecto, escenario o empresa con mayor rendimiento sobre activos (ROA).
-
-
-En primera podemos 
-
-## PRACTICA
+<!-- ################  DATA ###################### -->
 
 ```{r}
 require(dplyr)
 require(ggplot2)
-library(rmarkdown)
+require(rmarkdown)
+require(kableExtra)
+require(patchwork)
 
 rootDat <- 
   'blog-finanzas/indicadores-financieros/roa-rendimiento-sobre-activos/data/data-example.xlsx'
@@ -65,34 +36,89 @@ dat <-
 ```
 
 
-```{r, tab.cap='ACTIVO Y RESULTADO NETO DE GESTION DE LA EMPRESA A Y B'}
-datRender <- dat %>% select(-ROA) %>% as_tibble()
+**Autor:** Luis Alberto Solis Peña
+
+**Fecha:** `r Sys.Date()`
+
+<div class="my-post-main-container">
+
+## OBJETO DEL INDICADOR
+
+Representa la comparación del activo de la institución respecto al resultado obtenidos en un intervalo de tiempo, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución con los recursos que dispone.
+
+## MARCO TEÓRICO
+
+Si entendemos a las finanzas, bajo el concepto expuesto por @PDAF como "El arte y la ciencia de administrar el dinero", donde los indicadores, ratios, cocientes o índices expresadas como medidas aritméticas establecen una relación cuantitativa entre dos o más partidas de los estados financieros:
+
+- Balance general
+- Estado de resultados
+- Estados financieros complementarios
+
+Ahora bien, la ecuación o formula del ROA se compone de:
+
+$$ ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
+
+Donde, las variables que componen esta expresión son extraídos bajo el siguiente criterio:
+
+- El resultado neto es una cuenta del estado de resultados.
+- El total activo es una cuenta del balance general.
+
+## CRITERIO DE DECISIÓN
+
+Teniendo como criterio objetivo la de maximizar los retornos obtenidos:
+
+Se considera como escenario o institución más favorable al que posea un ROA más elevado, es decir, manteniendo constantes otras variables exógenas se elegirá el proyecto, alternativa o empresa con mayor rendimiento sobre activos (ROA).
+
+## PRACTICA
+
+Se presenta dos alternativas, la empresa "A" y "B" de los cuales se tiene el activo y resultado neto contabilizado para las siguientes gestiones:
+
+```{r}
+datRender <- 
+  dat %>% 
+  select(-ROA) %>% 
+  mutate(FECHA = as.character(FECHA)) %>% 
+  as_tibble()
 names(datRender) <- c('GESTION', 'ENTIDADES', 'ACTIVO', 'RESULTADO NETO DE GESTION')
-paged_table(datRender)
+
+kable(datRender, "html") %>% kable_styling(full_width = F)
 ```
 
+En primer término, se visualiza la evolución de activos y resultado neto para las entidades correspondientes:
 
-```{r, fig.cap='ACTIVO'}
-dat %>% 
+```{r}
+p1 <- 
+  dat %>% 
   ggplot(aes(x=FECHA, y=ACTIVO, color=ENTIDAD)) + 
-  geom_line()
-```
+  geom_line(size=1) +  
+  scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
+  ylab('ACTIVO') +
+  xlab('')
 
-```{r, fig.cap='RESULTADO NETO DE GESTION'}
-dat %>% 
+p2 <- 
+  dat %>% 
   ggplot(aes(x=FECHA, y=RESULTADO.NETO, color=ENTIDAD)) + 
-  geom_line()
+  geom_line(size=1) +  
+  scale_y_continuous(labels = function(x) format(x, big.mark = " ", scientific = FALSE)) +
+  ylab('RESULTADO NETO') +
+  xlab('')
+
+p1/p2
 ```
 
+Se observa que la empresa "A" en términos monetarios posee mayor activo y resultado neto por periodo, pero aplicando el indicador ROA se obtiene:
 
-```{r, fig.cap='RENDIMIENTO SOBRE ACTIVOS (ROA)'}
+```{r, fig.height=4}
 dat %>% 
   ggplot(aes(x=FECHA, y=ROA, color=ENTIDAD)) + 
-  geom_line()
+  geom_line(size=1) +
+  ylab('ROA') +
+  xlab('') 
 ```
 
+Resumiendo, estos resultados se tienen:
 
-```{r, tab.cap='RESULTADOS PROMEDIO'}
+```{r}
 datRender <- 
   dat %>% 
   group_by(ENTIDAD) %>%
@@ -102,8 +128,11 @@ datRender <-
 
 names(datRender) <- c('ENTIDAD','ACTIVO', 'RESULTADO NETO PROMEDIO', 'ROA PROMEDIO')
 
-paged_table(datRender)
+kable(datRender, "html") %>% kable_styling(full_width = F)
 ```
+
+
+Donde bajo el criterio de decisión expuesto anteriormente, si bien la empresa "A" posee un mayor activo y resultado neto de gestión contabilizado, se concluye que manteniendo constantes otras variables exógenas la empresa "B" es la alternativa que genera mayores retornos sobre los recursos que administra.
 
 ## REFERENCIAS
 
