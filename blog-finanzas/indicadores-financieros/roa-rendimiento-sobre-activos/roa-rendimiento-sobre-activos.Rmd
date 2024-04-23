@@ -1,13 +1,19 @@
 ---
 output: html_document
+bibliography: data/referencias.bib
+nocite: '@*'
 ---
+
+**Autor:** xxxxxxxxx
+
+**Fecha:** `r Sys.Date()`
 
 <div class="my-post-main-container">
 
 <!-- ################  CONFIGURACIONES ###################### -->
 
 ```{r include=FALSE}
-knitr::opts_chunk$set(echo = TRUE,
+knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       warning = FALSE,
                       out.width = "60%",
@@ -15,6 +21,9 @@ knitr::opts_chunk$set(echo = TRUE,
                       fig.align = "center")
 
 ```
+
+## MARCO TEORICO
+
 Un indicador financiero tiene por objeto cuantificar una caracteristica o aspecto de la administración de una entidad, estas variables son medidas por los estados financieros.
 
 Representa la comparación del activo de la institución respecto al resultado obtenido por la dicha entidad, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución.
@@ -23,21 +32,79 @@ La ecuación del ROA se resume en:
 
 $$ ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
 
-## Criterio de decisión
+Estos datos provienen o son extraídos de los estados financieros:
 
-Donde aquellas instituciones que poseen mayor ROA, se consideran mas favorables sobre las otras.
+- El resultado neto es una cuenta del estado de resultados
+- El total activo es una cuenta del balance general
+
+## CRITERIO DE DECISIÓN
+
+Se considera como escenario o institución mas favorable a un ROA mas elevado, es decir, manteniendo otras variables exogenas constantes se elegirá un proyecto, escenario o empresa con mayor rendimiento sobre activos (ROA).
+
 
 En primera podemos 
 
-## Practica
+## PRACTICA
 
-Estos datos provienen o son extraidos de los estados financieros:
+```{r}
+require(dplyr)
+require(ggplot2)
+library(rmarkdown)
 
-- Balance general
-- Estado de resultados
+rootDat <- 
+  'blog-finanzas/indicadores-financieros/roa-rendimiento-sobre-activos/data/data-example.xlsx'
+dat <- 
+  openxlsx::read.xlsx(rootDat)
+
+dat <- 
+  dat %>% 
+  mutate(ROA=RESULTADO.NETO/ACTIVO)
+
+```
 
 
+```{r, tab.cap='ACTIVO Y RESULTADO NETO DE GESTION DE LA EMPRESA A Y B'}
+datRender <- dat %>% select(-ROA) %>% as_tibble()
+names(datRender) <- c('GESTION', 'ENTIDADES', 'ACTIVO', 'RESULTADO NETO DE GESTION')
+paged_table(datRender)
+```
 
 
+```{r, fig.cap='ACTIVO'}
+dat %>% 
+  ggplot(aes(x=FECHA, y=ACTIVO, color=ENTIDAD)) + 
+  geom_line()
+```
+
+```{r, fig.cap='RESULTADO NETO DE GESTION'}
+dat %>% 
+  ggplot(aes(x=FECHA, y=RESULTADO.NETO, color=ENTIDAD)) + 
+  geom_line()
+```
+
+
+```{r, fig.cap='RENDIMIENTO SOBRE ACTIVOS (ROA)'}
+dat %>% 
+  ggplot(aes(x=FECHA, y=ROA, color=ENTIDAD)) + 
+  geom_line()
+```
+
+
+```{r, tab.cap='RESULTADOS PROMEDIO'}
+datRender <- 
+  dat %>% 
+  group_by(ENTIDAD) %>%
+  summarise(ACTIVO=mean(ACTIVO),
+            RESULTADO.NETO = mean(RESULTADO.NETO)) %>% 
+  mutate(ROA=RESULTADO.NETO/ACTIVO)
+
+names(datRender) <- c('ENTIDAD','ACTIVO', 'RESULTADO NETO PROMEDIO', 'ROA PROMEDIO')
+
+paged_table(datRender)
+```
+
+## REFERENCIAS
+
+<div id="refs"></div>
 
 </div>
