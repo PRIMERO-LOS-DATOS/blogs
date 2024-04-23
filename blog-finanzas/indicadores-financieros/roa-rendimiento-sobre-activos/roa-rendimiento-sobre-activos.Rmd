@@ -9,8 +9,8 @@ nocite: '@*'
 knitr::opts_chunk$set(echo = FALSE,
                       message = FALSE,
                       warning = FALSE,
-                      out.width = "60%",
-                      out.height = "60%",
+                      out.width = "100%",
+                      out.height = "100%",
                       fig.align = "center")
 
 ```
@@ -40,7 +40,7 @@ dat <-
 
 **Autor:** Luis Alberto Solis Peña
 
-**Fecha:** `r Sys.Date()`
+**Fecha última revisión:** `r Sys.Date()`
 
 ## OBJETO DEL INDICADOR
 
@@ -56,7 +56,7 @@ Si entendemos a las finanzas, bajo el concepto expuesto por @PDAF como "El arte 
 
 Ahora bien, la ecuación o formula del ROA se compone de:
 
-$$ ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
+$$ROA = \frac{ \text{Resultado Neto} }{ \text{Total Activo} }$$
 
 Donde, las variables que componen esta expresión son extraídos bajo el siguiente criterio:
 
@@ -81,7 +81,7 @@ datRender <-
   as_tibble()
 names(datRender) <- c('GESTION', 'ENTIDADES', 'ACTIVO', 'RESULTADO NETO DE GESTION')
 
-kable(datRender, "html") %>% kable_styling(full_width = F)
+kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 10)
 ```
 
 En primer término, se visualiza la evolución de activos y resultado neto para las entidades correspondientes:
@@ -128,7 +128,7 @@ datRender <-
 
 names(datRender) <- c('ENTIDAD','ACTIVO', 'RESULTADO NETO PROMEDIO', 'ROA PROMEDIO')
 
-kable(datRender, "html") %>% kable_styling(full_width = F)
+kable(datRender, "html") %>% kable_styling(full_width = F, font_size = 10)
 ```
 
 
