@@ -22,9 +22,11 @@ knitr::opts_chunk$set(echo = FALSE,
 
 ```
 
-## MARCO TEORICO
+## OBJETO DEL INDICADOR
 
 Un indicador financiero tiene por objeto cuantificar una caracteristica o aspecto de la administración de una entidad, estas variables son medidas por los estados financieros.
+
+## MARCO TEORICO
 
 Representa la comparación del activo de la institución respecto al resultado obtenido por la dicha entidad, es decir, el indicador busca cuantificar o exponer la capacidad de generar retornos de la institución.
 
