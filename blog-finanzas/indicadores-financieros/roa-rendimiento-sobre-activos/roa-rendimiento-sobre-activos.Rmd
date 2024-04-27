@@ -38,12 +38,6 @@ dat <-
 
 <div class="my-post-main-container">
 
-
-<script type="text/javascript" id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
-</script>
-
-
 **Autor:** Luis Alberto Solis Peña
 
 **Fecha última revisión:** `r Sys.Date()`
