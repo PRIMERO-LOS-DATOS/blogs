@@ -1,5 +1,7 @@
 ---
 output: html_document
+bibliography: data/referencias.bib
+nocite: '@*'
 ---
 
 <div class="my-post-main-container">
@@ -56,5 +58,9 @@ wordcloud(words = palabras,
 ## Ver tambien
 
 - [Video tutorial del articulo](https://youtu.be/zbExa6flNXE)
+
+## REFERENCIAS
+
+<div id="refs"></div>
 
 </div>
